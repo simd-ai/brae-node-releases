@@ -1,7 +1,7 @@
 #!/bin/sh
 # brae-node installer.
 #
-#   curl -fsSL https://brae.sh/node.sh | sh
+#   curl -fsSL https://api.brae.sh/node.sh | sh
 #
 # Downloads the agent for this machine's architecture, checks it against the published SHA-256, and installs
 # it to /usr/local/bin/brae-node. It does not register anything and it starts no service: run

@@ -7,10 +7,10 @@ agent's source lives in a private repository.
 ## Install
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/simd-ai/brae-node-releases/main/install.sh | sh
+curl -fsSL https://api.brae.sh/node.sh | sh
 ```
 
-It downloads the binary for your architecture, **verifies it against the published SHA-256**, and installs it
+That URL serves this repository's `install.sh` from Brae's own domain. It downloads the binary for your architecture, **verifies it against the published SHA-256**, and installs it
 to `/usr/local/bin/brae-node`. It registers nothing and starts no service.
 
 Then:
