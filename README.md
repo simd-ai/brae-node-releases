@@ -16,8 +16,7 @@ to `/usr/local/bin/brae-node`. It registers nothing and starts no service.
 Then:
 
 ```bash
-brae-node init                     # look at this machine, create its identity — no network calls
-brae-node join --token <TOKEN>     # join, with the token from https://app.brae.sh
+brae-node join --token <TOKEN>     # check this machine, then join, with the token from https://app.brae.sh
 ```
 
 ## What is published
@@ -42,4 +41,4 @@ sha256sum -c --ignore-missing SHA256SUMS
 ## Requirements
 
 Linux with systemd, an NVIDIA GPU of compute capability 8.0 or newer (Ampere and later), and a driver
-supporting CUDA 12.4+. `brae-node init` checks all of this and explains what is missing.
+supporting CUDA 12.4+. `brae-node join` checks all of this first and explains what is missing (`brae-node init` runs just the check).

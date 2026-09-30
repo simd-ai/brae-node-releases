@@ -77,14 +77,13 @@ case ":$PATH:" in
 esac
 
 if ! [ -e /dev/nvidiactl ]; then
-    warn "no NVIDIA device found on this machine — brae-node init will tell you what is missing"
+    warn "no NVIDIA device found on this machine — brae-node join will tell you what is missing"
 fi
 
 cat <<EOF
 
-${B}brae-node is installed.${N} Two steps, neither of which sends anything yet:
+${B}brae-node is installed.${N} One step left, with the token from app.brae.sh (Add a GPU):
 
-    brae-node init                      look at this machine, create its identity
-    brae-node join --token <TOKEN>      join the network with the token from app.brae.sh
+    brae-node join --token <TOKEN>      check this machine, then join the network
 
 EOF
